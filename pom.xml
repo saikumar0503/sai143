@@ -6,7 +6,7 @@
   <groupId>com.iaspvt</groupId>
   <artifactId>project143</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>war</packaging> <!-- Change made here -->
+  <packaging>war</packaging> <!-- Changed from jar to war -->
 
   <name>project143</name>
   <url>http://www.example.com</url>
@@ -40,6 +40,14 @@
         <version>2.22.2</version>
       </plugin>
       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.3.1</version> <!-- Updated version -->
+        <configuration>
+          <failOnMissingWebXml>false</failOnMissingWebXml>
+        </configuration>
+      </plugin>
+      <plugin>
         <groupId>org.apache.tomcat.maven</groupId>
         <artifactId>tomcat7-maven-plugin</artifactId>
         <version>2.2</version>
@@ -48,7 +56,7 @@
           <server>TomcatServer</server>
           <path>/project143</path>
         </configuration>
-      </plugin>      
+      </plugin>
     </plugins>
   </build>
 </project>

@@ -6,7 +6,7 @@
   <groupId>com.iaspvt</groupId>
   <artifactId>project143</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
+  <packaging>war</packaging> <!-- Change made here -->
 
   <name>project143</name>
   <url>http://www.example.com</url>

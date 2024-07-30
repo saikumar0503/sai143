@@ -40,6 +40,16 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>2.22.2</version>
       </plugin>
+         <plugin>
+			<groupId>org.apache.tomcat.maven</groupId>
+			<artifactId>tomcat7-maven-plugin</artifactId>
+			<version>2.2</version>
+	  	<configuration>
+   		<url>http://3.81.96.137:8080/manager/text</url>
+   		<server>TomcatServer</server>
+   		<path>/project143]</path>
+		  </configuration>
+  </plugin>      
     </plugins>
   </build>
 </project>
